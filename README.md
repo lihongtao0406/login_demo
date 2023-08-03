@@ -1,12 +1,13 @@
-Best Login Test
+Beston Login Test Demo
 ========
 
-This is a login web application which frontend is developed by React and backend is developed by PHP. 
+The project is a web application that allows users to login and register using their credentials securely. It showcases the integration of Laravel 8 as the backend API and ReactJS for the frontend user interface. 
 
 To get started, simply dowload this repo.
 
-## Preview
- - [Demo](https://bestonlogin.herokuapp.com/) 
+## Notice
+ - In 'forget password' function, it will send a 4 digital code from a gmail to user's email so that it can allow to reset password. However, now it is not avaliable. Because google has made some changes to its security settings. 
+ - But you can still find the 4 digital code in database, the table is called "password_resets"
 
 ## Table of Contents
 
@@ -42,9 +43,26 @@ git clone https://github.com/lihongtao0406/beston_login_test.git
 
  - Laravel8 (https://laravel.com/docs/8.x/installation) & Laravel Passport(https://laravel.com/docs/8.x/passport)
  - XAMPP 
- - REST Api
+ - RESTful Api
  - Mysql
 
+
+## Database Setting
+- Make sure XAMPP is running
+- Create a New Database(Optional)
+- Choose 'heroku_7a2e3a7210f9a2f.sql' to Import
+
+
+## Database Configure
+
+To connect your Laravel 8 project to Mysql, you need to set up the following database configuration in the `.env` file:
+```dotnev
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_PASSWORD=your_database_pwd
+```
 ## Frontend Run
 
 Open terminal and direct to frontend directory to input
